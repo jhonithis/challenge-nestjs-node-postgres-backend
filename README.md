@@ -7,23 +7,23 @@
 [linux-image]: https://img.shields.io/travis/nestjs/nest/master.svg?label=linux
 [linux-url]: https://travis-ci.org/nestjs/nest
   
+## Description
+
+Projeto em [Node.js](https://nodejs.org/) utilizando [Nest](https://nestjs.com/) e [PostgreSQL](https://www.postgresql.org/) baseado nos conteúdos:
+
+- Kela Casey - [Nestjs Typeorm Graphql Dataloader tutorial with Typescript](https://codersera.com/blog/nestjs-typeorm-graphql-dataloader-tutorial-with-typescript/)
+- Rocketseat - [NestJS + TypeORM + GraphQL | Code Challenge](youtube.com/watch?v=nDN4JRbFEns)
+- Haider Malik - [Connect NestJs App to Postgres](https://www.youtube.com/watch?v=4tysufdGXjQ&ab_channel=HaiderMalik)
+
  ## Pacotes adicionais instalados no projeto
 
 ```bash
- # dataloader graphql typeorm pg(postgres) apollo
+# dataloader graphql typeorm pg(postgres) apollo
 $ yarn add dataloader graphql graphql-tools type-graphql typeorm graphql apollo-server-express voyager @types/graphql @nestjs/graphql pg @nestjs/typeorm
 
-# reinicia aplicação caso seja feita alteração no codigo, startar com yarn start:dev
-$ yarn add nodemon -D
-
-# instalação do ts-node
+# ts-node
 $ npm install -g ts-node
 ```
-
-## Description
-
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
-
 
 ## Running the app
 
@@ -51,10 +51,6 @@ $ npm run test:e2e
 $ npm run test:cov
 ```
 
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
 ## Stay in touch
 
 - Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
@@ -64,10 +60,4 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 ## License
 
   Nest is [MIT licensed](LICENSE).
-
-## Projeto baseado nas aulas
-
-- Kela Casey - [Nestjs Typeorm Graphql Dataloader tutorial with Typescript](https://codersera.com/blog/nestjs-typeorm-graphql-dataloader-tutorial-with-typescript/)
-- Rocketseat - [NestJS + TypeORM + GraphQL | Code Challenge](youtube.com/watch?v=nDN4JRbFEns)
-- Haider Malik - [Connect NestJs App to Postgres](https://www.youtube.com/watch?v=4tysufdGXjQ&ab_channel=HaiderMalik)
 
