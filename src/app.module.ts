@@ -2,7 +2,7 @@ import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import {config as ormOptions } from './config/orm'
+import * as ormOptions from './config/orm';
 
 @Module({
   imports: [TypeOrmModule.forRoot(ormOptions)],

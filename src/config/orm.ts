@@ -1,7 +1,7 @@
 import * as path from 'path'
 import {TypeOrmModuleOptions} from '@nestjs/typeorm';
 
-export const config : TypeOrmModuleOptions = {
+const options : TypeOrmModuleOptions = {
     type: 'postgres',
     username: 'postgres',
     password: 'postgres',
@@ -9,8 +9,11 @@ export const config : TypeOrmModuleOptions = {
     host: '172.17.0.2',
     database: 'nestpostgres',
     entities: [path.resolve(__dirname,  '..', 'db', 'models', '*')],
-    migrations: [path.resolve(__dirname,  '..', 'db', 'migrations', '*')]
+    migrations: [path.resolve(__dirname,  '..', 'db', 'migrations', '*')],
+    cli : {
+        migrationsDir: path.resolve(__dirname,  '..', 'db', 'migrations')  
+   }
 };
 
-module.exports = config;
+module.exports = options;
 
